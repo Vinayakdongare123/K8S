@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myreplicaset
+  labels:
+    app: myapp2
+    Department: Devops
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      myapp: Devops
+  template:
+    metadata:
+      labels:
+        myapp: Devops
+    spec:
+      containers:
+        - name: myapp
+          image: nginx
