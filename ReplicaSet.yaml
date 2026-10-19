@@ -18,3 +18,9 @@ spec:
       containers:
         - name: myapp
           image: nginx
+          ports:
+            - containetport: 80
+          commnd: ["/bin/sh", "-c"]
+          args: 
+            - echo '<h1>Hello This is Replica Set</h1>' > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'
+            
