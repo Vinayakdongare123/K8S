@@ -22,6 +22,7 @@ spec:
             - containetport: 80
           command: ["/bin/sh", "-c"]
           args: 
-            - echo '<h1>Hello This is Replica Set</h1>' > /usr/share/nginx/html/index.html
+            - 
+              echo '<h1>Hello This is Replica Set</h1>' > /usr/share/nginx/html/index.html
               exec nginx -g 'daemon off;'
             
