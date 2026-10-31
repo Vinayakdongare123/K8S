@@ -8,23 +8,23 @@ metadata:
 spec:
   ingressClassName: nginx 
   rules:
-  - host: web-app.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: web-app-service
-            port: 
-              number: 80
-  - host: mobile-app.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: mobile-app-servic
-            port: 
-            number: 80
+    - host: web-app.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: web-app-service
+                port: 
+                  number: 80
+    - host: mobile-app.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+              name: mobile-app-servic
+              port: 
+                number: 80
