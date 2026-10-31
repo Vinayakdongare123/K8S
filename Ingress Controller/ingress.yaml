@@ -25,6 +25,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-              name: mobile-app-servic
+              name: mobile-app-service
               port: 
                 number: 80
