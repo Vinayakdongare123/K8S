@@ -8,11 +8,19 @@ metadata:
 spec:
   ingressClassName: nginx 
   rules:
-  - host: myapp.example.com
+  - host: web-app.com
     http:
       paths:
       - path: /analytics
         pathType: Prefix
         backend:
           service:
-            name: analytics-service
+            name: web-app-service
+- host: mobile-app.com
+    http:
+      paths:
+      - path: /analytics
+        pathType: Prefix
+        backend:
+          service:
+            name: mobile-app-service
