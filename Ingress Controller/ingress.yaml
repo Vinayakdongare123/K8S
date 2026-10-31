@@ -11,7 +11,7 @@ spec:
   - host: web-app.com
     http:
       paths:
-      - path: /analytics
+      - path: /
         pathType: Prefix
         backend:
           service:
@@ -19,7 +19,7 @@ spec:
 - host: mobile-app.com
     http:
       paths:
-      - path: /analytics
+      - path: /
         pathType: Prefix
         backend:
           service:
